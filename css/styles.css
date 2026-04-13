@@ -1,0 +1,146 @@
+* {
+    font-family:"Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgHeader {
+    width: 100%
+    height: 5rem;
+  
+}
+.indexHeader ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+.indexHeader nav ul li a {
+color: white ;
+text-decoration: none;
+font-weight: 500;
+font-size: 1.2rem;
+}
+.indexHeader {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 100%;
+    background-color:#246A4B;
+    position: fixed;
+    
+}
+
+
+.buscadorHeader {
+  
+  background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../Imagenes/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.Buscar{
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+.botonBuscar {
+    text-align: center;
+    width: 10rem;
+    color: beige;
+    font-weight: 600;
+    background-color: #246A4B;
+    border-radius: 0.8rem;
+    border: none;
+    padding: 5px;
+    
+
+}
+.actividadesPopulares{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 30px;
+    gap: 30px;
+    font-weight: 400;
+    color: #246A4B;
+    text-align: start;
+}
+.actividadesPopulares img {
+    height: 200px;
+    width: 300px;
+
+}
+.recomendados {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 30px;
+    gap: 30px;
+    font-weight: 400;
+    color: #246A4B;
+    text-align: start;
+}
+.recomendados img{
+    height: 200px;
+    width: 300px;
+}
+
+.comoFunciona img {
+    height: 20rem;
+    width: 20rem;
+}
+.comoFunciona {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+    
+}
+.indexFooter img {
+    width: 4rem;
+    border-radius: 1rem;
+}
+.indexFooter{
+    display: flex;
+    padding-top: 5rem;
+    padding-left: 30px;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    
+}
+
+
+@media (min-width: 500px){
+    .indexHeader ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (min-width: 900px){
+    .itemsComoFunciona {
+        display: flex;
+    }
+    .indexHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+}

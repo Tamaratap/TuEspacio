@@ -4,10 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.imgHeader {
-    width: 100%
-    height: 5rem;
-  
+
+.iconoMensaje{
+  width: 3rem;
+  border-radius: 2rem;
 }
 .indexHeader ul {
     display: flex;
@@ -16,19 +16,27 @@
     align-items: center;
 }
 .indexHeader nav ul li a {
-color: white ;
+color:#fff  ;
 text-decoration: none;
 font-weight: 500;
 font-size: 1.2rem;
 }
 .indexHeader {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-    width: 100%;
-    background-color:#246A4B;
-    position: fixed;
+   
+background-color:#246A4B;
+z-index: 100;
+  
     
+}
+.botonesHeader {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+}
+.indexHeader button{
+    background-color: #fff;
+   
 }
 
 
@@ -45,20 +53,24 @@ font-size: 1.2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 20px;
-  
+  padding: 4rem;
+ 
 }
+
 .Buscar{
     display: flex;
-    align-items: center;
-    width: 15rem;
     flex-direction: column;
-    gap: 10px;
-    padding-top: 20px;
+    align-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    width: 15rem;
+   
+   
+    
 }
 .botonBuscar {
     text-align: center;
-    width: 10rem;
+    width: 15rem;
     color: beige;
     font-weight: 600;
     background-color: #246A4B;
@@ -71,31 +83,34 @@ font-size: 1.2rem;
 .actividadesPopulares{
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    padding-top: 30px;
+    
     gap: 30px;
     font-weight: 400;
     color: #246A4B;
     text-align: start;
 }
 .actividadesPopulares img {
-    height: 200px;
-    width: 300px;
+   height: 20rem;
+   object-fit: cover;
+
 
 }
+
 .recomendados {
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    padding-top: 30px;
+   
     gap: 30px;
     font-weight: 400;
     color: #246A4B;
     text-align: start;
 }
 .recomendados img{
-    height: 200px;
-    width: 300px;
+     height: 30rem;
+   object-fit: cover;
+}
+.recomendados h5{
+    color:#000000;
 }
 
 .comoFunciona img {
@@ -105,7 +120,9 @@ font-size: 1.2rem;
 .comoFunciona {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   
+    width: 20rem;
+    align-content: center;
    
     
 }
@@ -117,25 +134,31 @@ font-size: 1.2rem;
     display: flex;
     padding-top: 5rem;
     padding-left: 30px;
+    padding-bottom: 3rem;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     font-weight: 400;
     
 }
+.redesSociales{
+    display: flex;
+}
+
 
 
 @media (min-width: 500px){
     .indexHeader ul{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem;
         justify-content: center;
-        text-align: center;
+        text-align: center; 
     }
 }
 @media (min-width: 900px){
     .itemsComoFunciona {
-        display: flex;
+       display: flex;
+       gap: 5rem;
     }
     .indexHeader{
         flex-direction: row;
@@ -143,4 +166,5 @@ font-size: 1.2rem;
         padding-right: 30px;
         padding-left: 20px;
     }
+    
 }

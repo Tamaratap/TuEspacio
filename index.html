@@ -11,46 +11,144 @@
 <link rel="stylesheet" href="./css/styles.css">
 
 </body>
-<header class="indexHeader">
-    <a href="./index.html">
-        <img class="imgHeader" src="./Imagenes/Topbar1.png" alt="imagenlogo">
+<header class="indexHeader position-fixed w-100">
+   
+    <nav class="navbar navbar-expand-lg body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">
+        <img src="./Imagenes/Topbar1.png" alt="Logo">
+
     </a>
-        <nav>
-            <ul>
-                <li><a href="#">Favoritos</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Perfil</a></li>
-            </ul>
-        </nav>
+    <div class="botonesHeader">
+     <a  href="./mensajes.html">
+        <img class="iconoMensaje" src="./Imagenes/iconoNotificación.jpg" alt="ícono de mensaje">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./favoritos.html">Favoritos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./reservas.html">Reservas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./perfil.html">Perfil</a>
+        </li>
+       
+      </ul>
+     
+    </div>
+    </div>
+  </div>
+</nav>
     </header>
 
 <section class="buscadorHeader">
   <h1>Encuentra patios, terrazas o piscinas por horas para tus celebraciones.</h1>
   <form class="Buscar">
-  <label class="lugar" for="lugar">¿Dónde?</label>
+    
+  <label  for="lugar">¿Dónde?</label>
   <input type="text" id="nombre" name="lugar">
 
   <label for="fecha">Fecha</label>
   <input type="date" id="date" name="date">
+  
   <label for="cantidad">Número de personas</label>
-
   <input type="number" id="number" name="number">
 
   <input class="botonBuscar" type="Buscar" value="Buscar">
 </form>
 
 </section>
-<section class="actividadesPopulares">
+
+<section class="actividadesPopulares p-4 pt-5">
     <h2>Actividades Populares</h2>
-    <img src="./Imagenes/Reuniondeequipo.jpg" alt="reunion de equipo">
-</section>
+ <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Imagenes/grupoDeAmigos.jpg" class="d-block w-100" alt="Grupo de amigos">
+      <div class="carousel-caption  d-md-block">
+        <h5>Evento con amigos</h5>
+        <p>Festeja tu cumpleaños en una terraza con amigos</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Imagenes/reunionDeEquipo.jpg" class="d-block w-100" alt="Reunio de equipo">
+      <div class="carousel-caption  d-md-block">
+        <h5>Reuniones de equipo</h5>
+        <p>Haz reuniones de trabajo en lugares cómodos y tranquilos</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Imagenes/Rodaje.jpg" class="d-block w-100" alt="Rodaje">
+      <div class="carousel-caption  d-md-block">
+        <h5>Rodajes</h5>
+        <p>Haz sesiones de fotos o rodajes</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+section class="recomendados p-4 pt-5">
+    <h2>Recomendados</h2>
+ <div id="carouselExampleCaptions2" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Imagenes/Terraza.jpg" class="d-block w-100" alt="Terraza">
+      <div class="carousel-caption text-black  d-md-block">
+        <h5>Terraza</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Imagenes/Loft.jpg" class="d-block w-100" alt="Loft">
+      <div class="carousel-caption text-black d-md-block">
+        <h5>Loft</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./Imagenes/SaladeReuiniones.jpg" class="d-block w-100" alt="Sala de reuniones">
+      <div class="carousel-caption text-black  d-md-block">
+        <h5>Sala de reuniones</h5>
+        
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-<section class="recomendados">
-    <h2>Recomendados para ti</h2>
-    <img src="./Imagenes/SaladeReuiniones.jpg" alt="sala de reuniones">
 </section>
-
-<section class="comoFunciona">
+<section class="comoFunciona p-4">
     <h2>¿Cómo funciona?</h2>
     <section class="itemsComoFunciona">
    <div>
@@ -70,10 +168,26 @@
    </div>
   </section>
 </section>
+
+
 <footer class="indexFooter">
     <img src="./Imagenes/Logo.png" alt="Logo TuEspacio">
     <p>Reserva TuEspacio en minutos y disfruta de tu evento.</p>
+    <h4>Ayuda</h4>
+    <p>Preguntas frecuentes</p>
+    <p>Atención al cliente</p>
+  
     <h4>Contacto</h4>
+     <p>contacto@tuespacio.com</p>
+     <img  src="./Imagenes/logoWhatsApp.png" alt="logo WhatsApp">
+     <p>+34 697841256</p>
+
+     <h4>Seguinos</h4>
+     <div class="redesSociales">
+     <img  src="./Imagenes/logoInstagram.jpg" alt="Logo Instagram">
+     <img  src="./Imagenes/logoTikTok.png" alt="logo TikTok">
+     <img src="./Imagenes/logoYouTube.png" alt="Logo YOuTube">
+      </div>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

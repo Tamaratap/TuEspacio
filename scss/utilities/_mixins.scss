@@ -1,0 +1,8 @@
+ @mixin flexPerfil ($direction, $align) {
+     display: flex;
+     flex-direction: $direction;
+     align-items: $align ;
+     padding-top: 10rem;
+     padding-left: 2rem;
+     gap: 1rem;
+ }

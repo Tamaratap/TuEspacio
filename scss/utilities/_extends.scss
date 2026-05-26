@@ -1,0 +1,17 @@
+
+
+%dFlexCarrusel{
+      display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    font-weight: 400;
+    color:  #246A4B;
+    text-align: start;
+
+    img {
+        height: 20rem;
+        object-fit: cover;
+
+    }
+}

@@ -62,13 +62,6 @@
   padding-top: 2rem;
   width: 15rem;
 }
-.buscadorHeader button {
-  transform-origin: center;
-  transition: 1s;
-}
-.buscadorHeader button:hover {
-  transform: scale(1.2);
-}
 
 .botonBuscar {
   text-align: center;
@@ -120,7 +113,7 @@
   align-items: center;
   padding-top: 10rem;
   padding-left: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .perfil img {
@@ -134,7 +127,7 @@
   align-items: left;
   padding-top: 10rem;
   padding-left: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .evaluaciones div {
@@ -147,23 +140,16 @@
   align-items: left;
   padding-top: 10rem;
   padding-left: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.mensajes img {
-  width: 2.5rem;
-}
-.mensajes input {
-  width: 15rem;
-}
-
-.reserva {
+.reservas {
   display: flex;
   flex-direction: column;
   align-items: left;
   padding-top: 10rem;
   padding-left: 2rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (min-width: 500px) {
@@ -173,11 +159,6 @@
     gap: 1rem;
     justify-content: center;
     text-align: center;
-  }
-  .mensajes {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 4rem;
   }
 }
 @media (min-width: 900px) {
@@ -208,4 +189,4 @@
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
